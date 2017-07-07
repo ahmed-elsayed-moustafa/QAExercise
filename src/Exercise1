@@ -1,7 +1,7 @@
 • Encapsulation
 
 Is the simple idea of hiding the data/variables.  This is to stop anyone from accessing the variables directly and modifying it for their own use.
-typically this is achieved by using the provide modifier and providing getters and setters for the developers to use. this keeps the code intact within teh class
+typically this is achieved by using the provide modifier and providing getters and setters for the developers to use. this keeps the code intact within the class
 , allows for the class to have control over its own variables and any important data will be read only.
 
 
