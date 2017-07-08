@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	private ArrayList<Person> people = new ArrayList<Person>();
+	private ArrayList<Customer> customers = new ArrayList<Customer>();
 
 	public static void main(String[] args) {
 
@@ -17,38 +17,34 @@ public class Main {
 		System.out.format(" %d for %s%n", 2,"OAP/Old Person");
 		System.out.format(" %d for %s%n", 3,"Standard");
 
-
 		while (number-- > 0) {
 			m.classify(sc.nextInt());
 		}
 		sc.close();
-		int total = 0;
 
-		for (Person p : m.getPeople()) {
-			total += p.getPrice();
-		}
+		Cinema c= new Cinema(m.getCustomers());
 
-		System.out.format("The total cost of tickets for this movie is £%d", total);
+		c.printTotal();
 	}
 
 	public void classify(int type) {
 		switch (type) {
 		case 0:
-			people.add(new Child());
+			customers.add(new Customer(Classification.CHILD));
 			break;
 		case 1:
-			people.add(new Student());
+			customers.add(new Customer(Classification.CHILD));
 			break;
 		case 2:
-			people.add(new OAP());
+			customers.add(new Customer(Classification.CHILD));
 			break;
 		default:
-			people.add(new Standard());
+			customers.add(new Customer(Classification.CHILD));
 			break;
 		}
 	}
 
-	public ArrayList<Person> getPeople() {
-		return people;
+	public ArrayList<Customer> getCustomers() {
+		return customers;
 	}
 }
