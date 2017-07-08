@@ -1,3 +1,4 @@
+
 public class Standard extends Person{
 
     private Classification type = Classification.STANDARD;
