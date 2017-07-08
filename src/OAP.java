@@ -1,7 +1,11 @@
 
-public class OAP extends Person{
+public class OAP extends Person {
 
-	public OAP() {
-		type = Classification.OAP;
+	private Classification type = Classification.OAP;
+
+
+	@Override
+	public int getPrice() {
+		return type.getPrice();
 	}
 }

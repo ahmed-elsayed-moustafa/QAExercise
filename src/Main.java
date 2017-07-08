@@ -12,36 +12,38 @@ public class Main {
 		System.out.println("How many are going to see the Movie?");
 		int number = sc.nextInt();
 		System.out.println("Please enter the classification?");
+		System.out.format(" %d for %s%n", 0,"child");
+		System.out.format(" %d for %s%n", 1,"student");
+		System.out.format(" %d for %s%n", 2,"OAP/Old Person");
+		System.out.format(" %d for %s%n", 3,"Standard");
+
 
 		while (number-- > 0) {
-			m.classify(sc.next().toLowerCase());
+			m.classify(sc.nextInt());
 		}
 		sc.close();
 		int total = 0;
 
 		for (Person p : m.getPeople()) {
-			total += p.getType().getPrice();
+			total += p.getPrice();
 		}
 
 		System.out.format("The total cost of tickets for this movie is £%d", total);
 	}
 
-	public void classify(String type) {
+	public void classify(int type) {
 		switch (type) {
-		case "child":
+		case 0:
 			people.add(new Child());
 			break;
-		case "oap":
+		case 1:
 			people.add(new OAP());
 			break;
-		case "pensioner":
+		case 2:
 			people.add(new OAP());
-			break;
-		case "student":
-			people.add(new Student());
 			break;
 		default:
-			people.add(new Person());
+			people.add(new Standard());
 			break;
 		}
 	}

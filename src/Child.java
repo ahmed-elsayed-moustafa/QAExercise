@@ -1,7 +1,9 @@
 public class Child extends Person {
 	
-	 public Child() {
-		 type = Classification.CHILD;
+    private Classification type = Classification.CHILD;
+
+	@Override
+	public int getPrice() {
+		return type.getPrice();
 	}
-	
 }

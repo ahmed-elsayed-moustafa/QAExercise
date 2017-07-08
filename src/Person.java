@@ -1,13 +1,7 @@
-public class Person {
+public abstract class Person {
 	
-	protected Classification type;
-	
-	Person(){
-		type=Classification.STANDARD;
-	}
-	
-	public Classification getType(){
-		return type;
-	}
-	
+	private Classification type = null;
+
+	public abstract int getPrice();
+
 }

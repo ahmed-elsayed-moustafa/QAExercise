@@ -1,8 +1,10 @@
 
 public class Student extends Person {
 
-	public Student() {
-		type = Classification.STUDENT;
-	}
-   
+    private Classification type = Classification.STUDENT;
+
+    @Override
+    public int getPrice() {
+        return type.getPrice();
+    }
 }
