@@ -15,4 +15,5 @@ public class Cinema {
         return total;
     }
 
+
 }
