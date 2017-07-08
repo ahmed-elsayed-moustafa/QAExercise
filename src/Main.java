@@ -22,9 +22,11 @@ public class Main {
 		}
 		sc.close();
 
-		Cinema c= new Cinema(m.getCustomers());
+		Cinema c= new Cinema();
 
-		System.out.print(c);
+		double price = c.computeTicketPrices(m.getCustomers());
+
+		System.out.printf("The total cost of the tickets is £%.2f%n", price);
 	}
 
 	public void classify(int type) {
