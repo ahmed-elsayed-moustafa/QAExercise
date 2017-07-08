@@ -1,0 +1,36 @@
+• Encapsulation
+
+Is the simple idea of hiding the data/variables.  This is to stop anyone from accessing the variables directly and modifying it for their own use.
+typically this is achieved by using the private modifier and providing getters and setters for the developers to use. this keeps the code intact within the class
+, allows for the class to have control over its own variables and any important data will be read only.
+
+
+• Inheritance
+
+Inheritance is using the variables/methods used in another class(superclass). Inheritance is the mechanism of which one object aquires all the properties 
+and behaviours of the class extended. Inheritance is typically used for related classes and this keeps the code clean and
+removes duplicate methods by reusing those created in the parent class. When you are developing, you be find your self in a situation where you need methods used in a certain class you already created.
+This uses the concept typically defined as IS-A relationship which means the subclass becomes the same type and is then able to inherit behavior , 
+this allows use of the provided methods as well as any methods which you will use in this addition to those already defined within the parent. 
+
+
+
+• Polymorphism
+
+
+Polymorphism is different forms of the same thing. This is typically represented by initialising a parent reference to a child object. We can use polymorphism in Java by
+using overloading and overriding.
+
+Overloading: means the use of several exact named methods with different properties/arguments. Java would know which to call by the arguments and signiture.
+
+Overriding: the ability to use parent methods but override thier output for subclasses. This is a great feature which is convenient and helps to reduce code and duplicated methods/variables.
+
+
+
+• Abstraction
+
+Abstraction is hiding the implementation. So you may know what is returned but not how it is returned. This is achieved through the use of abstact classes and interfaces.
+An interface or abstract class is something which is not concrete , something which is incomplete. In order to use abstract classes or interfaces, abstract methods must be made concrete.
+A use of abstract classes is when you know something must exist but not sure what it will look like or how it will be computed.
+
+
