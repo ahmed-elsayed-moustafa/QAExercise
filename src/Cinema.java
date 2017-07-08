@@ -18,8 +18,9 @@ public class Cinema {
     }
 
 
-    public void printTotal(){
-        System.out.format("The total cost of tickets for this movie is £%d", total);
+    @Override
+    public String toString(){
+        return "The total cost of tickets for this movie is £"+total;
     }
 
 }

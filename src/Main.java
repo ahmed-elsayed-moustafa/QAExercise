@@ -24,7 +24,7 @@ public class Main {
 
 		Cinema c= new Cinema(m.getCustomers());
 
-		c.printTotal();
+		System.out.print(c);
 	}
 
 	public void classify(int type) {

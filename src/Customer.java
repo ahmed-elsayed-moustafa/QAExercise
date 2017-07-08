@@ -1,8 +1,6 @@
 public class Customer {
 	
-	private Classification type = null;
-
-
+	private Classification type;
 
 	Customer(Classification type){
 		this.type = type;
