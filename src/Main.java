@@ -37,7 +37,7 @@ public class Main {
 			people.add(new Child());
 			break;
 		case 1:
-			people.add(new OAP());
+			people.add(new Student());
 			break;
 		case 2:
 			people.add(new OAP());
