@@ -33,13 +33,13 @@ public class Main {
 			customers.add(new Customer(Classification.CHILD));
 			break;
 		case 1:
-			customers.add(new Customer(Classification.CHILD));
+			customers.add(new Customer(Classification.STUDENT));
 			break;
 		case 2:
-			customers.add(new Customer(Classification.CHILD));
+			customers.add(new Customer(Classification.OAP));
 			break;
 		default:
-			customers.add(new Customer(Classification.CHILD));
+			customers.add(new Customer(Classification.STANDARD));
 			break;
 		}
 	}
