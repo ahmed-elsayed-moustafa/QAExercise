@@ -12,12 +12,19 @@ public class Cinema {
         double total = 0;
         for (Customer c : customers) {
             int price = c.getPrice();
-            if(dow.equals("wednesday")) price-=2;
+            if(isDiscountAvailable()) price-=2;
             total+=price;
         }
 
         return total;
     }
+
+
+   public boolean isDiscountAvailable(){
+
+       return dow.equals("wednesday");
+
+   }
 
 
 }
