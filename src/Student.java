@@ -3,8 +3,11 @@
  */
 public class Student extends Customer{
 
-    Student(){
-        type= Classification.STUDENT;
+    private Classification type = Classification.STUDENT;
+
+    @Override
+    public int getPrice() {
+        return type.getPrice();
     }
 
 }

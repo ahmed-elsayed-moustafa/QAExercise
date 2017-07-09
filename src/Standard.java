@@ -4,8 +4,11 @@
 public class Standard extends Customer{
 
 
-    Standard(){
-        type= Classification.STANDARD;
+    private Classification type = Classification.STANDARD;
+
+    @Override
+    public int getPrice() {
+        return type.getPrice();
     }
 
 }

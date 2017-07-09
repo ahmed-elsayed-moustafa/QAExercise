@@ -3,11 +3,10 @@
  */
 public class Child extends Customer{
 
+    private Classification type = Classification.CHILD;
 
-    Child(){
-
-        type = Classification.CHILD;
-
+    @Override
+    public int getPrice() {
+        return type.getPrice();
     }
-
 }

@@ -1,9 +1,5 @@
-public class Customer {
+public abstract class Customer {
 
-	protected Classification type;
-
-	public int getPrice(){
-		return type.getPrice();
-	}
+	public abstract int getPrice();
 
 }

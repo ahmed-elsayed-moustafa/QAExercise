@@ -3,9 +3,11 @@
  */
 public class OAP extends Customer {
 
+    private Classification type = Classification.OAP;
 
-    OAP(){
-        type= Classification.OAP;
+    @Override
+    public int getPrice() {
+        return type.getPrice();
     }
 
 }
