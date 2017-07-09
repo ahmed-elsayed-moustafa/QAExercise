@@ -8,6 +8,7 @@ exercise 1.
 
 
 
-The exercise1.txt file contains the defenitons. 
+The exercise1.txt file contains the defenitons.
+
 The src folder contains the classes for the exercise.
 
