@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
@@ -5,11 +6,14 @@ import java.util.ArrayList;
  */
 public class Cinema {
 
+    private String dow = LocalDate.now().getDayOfWeek().toString().toLowerCase();
 
     public double computeTicketPrices(ArrayList<Customer> customers){
         double total = 0;
         for (Customer c : customers) {
-            total += c.getPrice();
+            int price = c.getPrice();
+            if(dow.equals("wednesday")) price-=2;
+            total+=price;
         }
 
         return total;
