@@ -32,16 +32,16 @@ public class Main {
 	public void classify(int type) {
 		switch (type) {
 		case 0:
-			customers.add(new Customer(Classification.CHILD));
+			customers.add(new Child());
 			break;
 		case 1:
-			customers.add(new Customer(Classification.STUDENT));
+			customers.add(new Student());
 			break;
 		case 2:
-			customers.add(new Customer(Classification.OAP));
+			customers.add(new OAP());
 			break;
 		default:
-			customers.add(new Customer(Classification.STANDARD));
+			customers.add(new Standard());
 			break;
 		}
 	}
